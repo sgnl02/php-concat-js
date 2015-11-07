@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# File versioning
+RewriteRule ^(.+)\.(js|css).([0-9]+)\.(php)$ $1.$2.$4
+</IfModule>

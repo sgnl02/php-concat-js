@@ -5,7 +5,7 @@
  * @date 01-11-2015
  *
  * Created: Sun 01-11-2015, 17:10:15 (:-0600)
- * Last modified: Sun 01-11-2015, 21:16:17 (-0600)
+ * Last modified: Sat 07-11-2015, 09:41:02 (-0600)
  */
 ?>
 
@@ -70,7 +70,7 @@ more sensible, like an
 
 <?php
 function loadJS($file) {
-	echo "dist/" . $file . ".js." . date("Ymd") . ".php";
+	echo "loader/" . $file . ".js." . date ("YmdHis", filemtime($file)) . ".php";
 }
 ?>
 
